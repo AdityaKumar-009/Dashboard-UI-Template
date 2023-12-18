@@ -1,0 +1,255 @@
+/* NAVIGATION BUTTON STYLES */
+.navButtons{
+   -fx-background-color: transparent;
+   -fx-background-radius: 0.75em;
+   -fx-text-fill: grey;
+   -fx-font-size: 14;
+}
+
+/* CHECKBOX STYLES */
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: #BBBBC2;
+    -fx-border-radius:10px;
+    -fx-border-style: dashed;
+}
+.check-box:selected .mark {
+    -fx-background-color: #3E91FF;
+}
+.check-box:selected .box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent;
+}
+
+#Parameter1_CheckBox .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #f3622d;
+}
+#Parameter1_CheckBox:selected .box{
+    -fx-border-color: transparent;
+}
+#Parameter1_CheckBox:selected .mark {
+    -fx-background-color: #f3622d;
+}
+
+#Parameter2_CheckBox .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius:10px;
+    -fx-border-color: #fba71b;
+}
+#Parameter2_CheckBox:selected .box{
+    -fx-border-color: transparent;
+}
+#Parameter2_CheckBox:selected .mark {
+    -fx-background-color: #fba71b;
+}
+
+#Parameter3_CheckBox .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #57b757;
+}
+#Parameter3_CheckBox:selected .box{
+    -fx-border-color: transparent;
+}
+#Parameter3_CheckBox:selected .mark {
+    -fx-background-color: #57b757;
+}
+
+#Parameter4_CheckBox .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #41a9c9;
+}
+#Parameter4_CheckBox:selected .box{
+    -fx-border-color: transparent;
+}
+#Parameter4_CheckBox:selected .mark {
+    -fx-background-color: #41a9c9;
+}
+
+#Parameter5_CheckBox .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #4258c9;
+}
+#Parameter5_CheckBox:selected .box{
+    -fx-border-color: transparent;
+}
+#Parameter5_CheckBox:selected .mark {
+    -fx-background-color: #4258c9;
+}
+
+#Parameter6_CheckBox .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #9a42c8;
+}
+#Parameter6_CheckBox:selected .box{
+    -fx-border-color: transparent;
+}
+#Parameter6_CheckBox:selected .mark {
+    -fx-background-color: #9a42c8;
+}
+
+/*CHARTS STYLES*/
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 0 5px 0 0;
+}
+
+.chart-symbol {
+    -fx-background-color: transparent;
+}
+
+.chart-plot-background{
+    -fx-background-color: transparent;
+}
+
+.Axes{
+    -fx-tick-label-font-size: 10px;
+}
+
+#parameter1 .chart-series-area-fill{
+    -fx-fill: rgba(243,98,45,0.175);
+}
+
+#parameter2 .chart-series-area-line{
+    -fx-stroke: #fba71b;
+}
+#parameter2 .chart-series-area-fill{
+    -fx-fill: rgba(251,167,27,0.175);
+}
+
+#parameter3 .chart-series-area-line{
+    -fx-stroke: #57b757;
+}
+#parameter3 .chart-series-area-fill{
+    -fx-fill: rgba(87, 183, 87, 0.175);
+}
+
+#parameter4 .chart-series-area-line{
+    -fx-stroke: #41a9c9;
+}
+#parameter4 .chart-series-area-fill{
+    -fx-fill: rgba(65, 169, 201,0.175);
+}
+
+#parameter5 .chart-series-area-line{
+    -fx-stroke: #4258c9;
+}
+#parameter5 .chart-series-area-fill{
+    -fx-fill: rgba(66, 88, 201, 0.175);
+}
+
+#parameter6 .chart-series-area-line{
+    -fx-stroke: #9a42c8;
+}
+#parameter6 .chart-series-area-fill{
+    -fx-fill: rgba(154, 66, 200, 0.175);
+}
+
+/* CHOICE BOX STYLE*/
+.FrequencyChoiceBox{
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+    -fx-border-width: 1px;
+    -fx-border-color:  #d4dadd;
+}
+
+/* Styling the javaFX ScrollBars. */
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color : white;
+    -fx-border-color : white;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color : #acacac;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color : #999999;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+    -fx-background-color : #7b7b7b;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+/* JavaFX scrollPane Styles */
+.scroll-pane {
+   -fx-background: #FFFFFF;
+   -fx-border-color: #FFFFFF;
+}
+
+/* TITLE STYLES */
+#Title{
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+}
+/* SUB-TITLE */
+#Subtitle{
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    -fx-text-fill: grey;
+}
+
+/* PARAMETER LABELS */
+.AllLabels{
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+
+/* RESPECTIVE LABEL COLORS */
+#parameter1_Label{
+    -fx-text-fill: #f3622d;
+}
+
+#parameter2_Label{
+    -fx-text-fill: #fba71b;
+}
+
+#parameter3_Label{
+    -fx-text-fill: #57b757;
+}
+
+#parameter4_Label{
+    -fx-text-fill: #41a9c9;
+}
+
+#parameter5_Label{
+    -fx-text-fill: #4258c9;
+}
+
+#parameter6_Label{
+    -fx-text-fill: #9a42c8;
+}

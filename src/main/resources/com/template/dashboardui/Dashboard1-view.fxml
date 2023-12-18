@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<ScrollPane cacheShape="false" centerShape="false" fitToWidth="true" minWidth="-Infinity" prefWidth="730.0" scaleShape="false" style="-fx-background-color: #ffffff;" stylesheets="@styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.template.dashboardui.Dashboard1Controller">
+    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="650.0">
+        <AnchorPane>
+            <ChoiceBox fx:id="frequencyChoiceBox" layoutX="561.0" layoutY="22.0" prefHeight="27.0" prefWidth="66.0" styleClass="FrequencyChoiceBox" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0" />
+            <Label id="Title" layoutX="23.0" layoutY="17.0" text="SECTION 1" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="15.0" />
+            <Label layoutX="493.0" layoutY="27.0" text="Frequency" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0" />
+        </AnchorPane>
+        <FlowPane hgap="35.0" vgap="35.0">
+            <padding>
+                <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+            </padding>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="200.0">
+                <effect>
+                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                        <color>
+                            <Color opacity="0.03999999910593033" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <AnchorPane fx:id="parameter1_Pane" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Label id="parameter1_Label" layoutX="21.0" layoutY="24.0" prefHeight="22.0" styleClass="AllLabels" text="PARAMETER 1" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                    <Label id="Subtitle" fx:id="parameter1_Label" layoutX="31.0" layoutY="53.0" prefHeight="18.0" prefWidth="160.0" style="-fx-font-size: 20;" text="0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                    <CheckBox id="Parameter1_CheckBox" fx:id="parameter1_CheckBox" layoutX="169.0" layoutY="17.0" mnemonicParsing="false" onAction="#showHideParameter1" selected="true" style="-fx-background-color: #fafafa;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                    <AreaChart id="parameter1" fx:id="parameter1_AreaChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="8.0" layoutY="55.0" legendVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="192.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="55.0">
+                        <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </AreaChart>
+                </AnchorPane>
+            </AnchorPane>
+            <AnchorPane>
+                <effect>
+                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                        <color>
+                            <Color opacity="0.03999999910593033" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <AnchorPane fx:id="parameter2_Pane" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Label id="parameter2_Label" layoutX="20.0" layoutY="25.0" prefHeight="22.0" styleClass="AllLabels" text="PARAMETER 2" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                    <Label id="Subtitle" fx:id="parameter2_Label" layoutX="20.0" layoutY="50.0" prefHeight="18.0" prefWidth="160.0" style="-fx-font-size: 20;" text="0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                    <CheckBox id="Parameter2_CheckBox" fx:id="parameter2_CheckBox" layoutX="169.0" layoutY="26.0" mnemonicParsing="false" onAction="#showHideParameter2" selected="true" style="-fx-background-color: #fafafa;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                    <AreaChart id="parameter2" fx:id="parameter2_AreaChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="1.0" layoutY="1.0" legendVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="192.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="55.0">
+                        <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </AreaChart>
+                </AnchorPane>
+            </AnchorPane>
+            <AnchorPane>
+                <effect>
+                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                        <color>
+                            <Color opacity="0.03999999910593033" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <AnchorPane fx:id="parameter3_Pane" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Label id="parameter3_Label" layoutX="14.0" layoutY="28.0" styleClass="AllLabels" text="PARAMETER 3" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                    <Label id="Subtitle" fx:id="parameter3_Label" layoutX="14.0" layoutY="56.0" prefHeight="18.0" prefWidth="160.0" style="-fx-font-size: 20;" text="0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                    <CheckBox id="Parameter3_CheckBox" fx:id="parameter3_CheckBox" layoutX="169.0" layoutY="28.0" mnemonicParsing="false" onAction="#showHideParameter3" style="-fx-background-color: #fafafa;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                    <AreaChart id="parameter3" fx:id="parameter3_AreaChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="1.0" layoutY="1.0" legendVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="192.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="55.0">
+                        <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </AreaChart>
+                </AnchorPane>
+            </AnchorPane>
+            <AnchorPane>
+                <effect>
+                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                        <color>
+                            <Color opacity="0.03999999910593033" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <AnchorPane fx:id="parameter4_Pane" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Label id="parameter4_Label" layoutX="27.0" layoutY="18.0" styleClass="AllLabels" text="PARAMETER 4" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                    <Label id="Subtitle" fx:id="parameter4_Label" layoutX="27.0" layoutY="45.0" prefHeight="18.0" prefWidth="160.0" style="-fx-font-size: 20;" text="0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                    <CheckBox id="Parameter4_CheckBox" fx:id="parameter4_CheckBox" layoutX="169.0" layoutY="18.0" mnemonicParsing="false" onAction="#showHideParameter4" style="-fx-background-color: #fafafa;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                    <AreaChart id="parameter4" fx:id="parameter4_AreaChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="1.0" layoutY="1.0" legendVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="192.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="55.0">
+                        <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </AreaChart>
+                </AnchorPane>
+            </AnchorPane>
+            <AnchorPane>
+                <effect>
+                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                        <color>
+                            <Color opacity="0.03999999910593033" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <AnchorPane fx:id="parameter5_Pane" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Label id="parameter5_Label" layoutX="14.0" layoutY="18.0" styleClass="AllLabels" text="PARAMETER 5" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                    <Label id="Subtitle" fx:id="parameter5_Label" layoutX="14.0" layoutY="44.0" prefHeight="18.0" prefWidth="160.0" style="-fx-font-size: 20;" text="0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                    <CheckBox id="Parameter5_CheckBox" fx:id="parameter5_CheckBox" layoutX="169.0" layoutY="18.0" mnemonicParsing="false" onAction="#showHideParameter5" style="-fx-background-color: #fafafa;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                    <AreaChart id="parameter5" fx:id="parameter5_AreaChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="1.0" layoutY="1.0" legendVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="192.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="55.0">
+                        <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </AreaChart>
+                </AnchorPane>
+            </AnchorPane>
+            <AnchorPane>
+                <effect>
+                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                        <color>
+                            <Color opacity="0.03999999910593033" />
+                        </color>
+                    </DropShadow>
+                </effect>
+                <AnchorPane fx:id="parameter6_Pane" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 1.5em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <Label id="parameter6_Label" layoutX="14.0" layoutY="17.0" prefHeight="22.0" styleClass="AllLabels" text="PARAMETER 6" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                    <Label id="Subtitle" fx:id="parameter6_Label" layoutX="14.0" layoutY="46.0" prefHeight="18.0" prefWidth="160.0" style="-fx-font-size: 20;" text="0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="40.0" />
+                    <CheckBox id="Parameter6_CheckBox" fx:id="parameter6_CheckBox" layoutX="169.0" layoutY="17.0" mnemonicParsing="false" onAction="#showHideParameter6" style="-fx-background-color: #fafafa;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                    <AreaChart id="parameter6" fx:id="parameter6_AreaChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="1.0" layoutY="1.0" legendVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="192.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-25.0" AnchorPane.topAnchor="55.0">
+                        <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis side="LEFT" />
+                        </yAxis>
+                    </AreaChart>
+                </AnchorPane>
+            </AnchorPane>
+        </FlowPane>
+        <AnchorPane>
+            <Label id="Title" layoutX="23.0" layoutY="17.0" text="SECTION 2" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="15.0" />
+            <CheckBox fx:id="symbols_CheckBox" alignment="CENTER" contentDisplay="CENTER" layoutX="393.0" layoutY="27.0" mnemonicParsing="false" onAction="#showHideSymbols" prefHeight="18.0" prefWidth="73.0" text="Symbols" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="20.0" />
+        </AnchorPane>
+          <LineChart id="combinedChart" fx:id="combinedChart" alternativeRowFillVisible="false" animated="false" createSymbols="false" horizontalZeroLineVisible="false" legendSide="RIGHT" prefHeight="400.0" verticalZeroLineVisible="false">
+              <xAxis>
+                  <CategoryAxis prefWidth="595.0" side="BOTTOM" styleClass="Axes" />
+              </xAxis>
+              <yAxis>
+                  <NumberAxis minorTickCount="0" side="LEFT" styleClass="Axes" />
+              </yAxis>
+          </LineChart>
+    </VBox>
+</ScrollPane>
